@@ -1,22 +1,22 @@
 
-\documentclass{article}
-\usepackage{booktabs}
-\usepackage{geometry}
-\usepackage{amsmath}
-\usepackage{supertabular}
-\usepackage{multicol}
-\geometry{margin=0in}
+            \documentclass{article}
+            \usepackage{booktabs}
+            \usepackage{geometry}
+            \usepackage{amsmath}
+            \usepackage{supertabular}
+            \usepackage{multicol}
+            \geometry{margin=0in}
 
-\begin{document}
-\vspace{10cm}
+            \begin{document}
+            \vspace{10cm}
 
-\twocolumn
-\centering
-\tablehead{Number & Relative Frequency \\}
-\begin{supertabular}{cc}
-\toprule
-\midrule
-
+            \twocolumn
+            \centering
+            \tablehead{Number & Relative Frequency \\}
+            \begin{supertabular}{cc}
+            \toprule
+            \midrule
+            
 49 & 0.25054 \\
 4 & 0.25049 \\
 57 & 0.25045 \\
@@ -103,4 +103,29 @@
 \multicolumn{2}{l}{$\chi^2 = 57.2833$} \\
 \multicolumn{2}{l}{\text{p - value} = 0.0312} \\
 \end{supertabular}
+\vspace{1cm}
+\begin{center}
+\textbf{Monte Carlo Simulation Results}
+\end{center}
+\begin{center}
+\textbf{(10,000,000 Runs x pick scenario)}
+\end{center}
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+Pick & Prize Amount \\
+\midrule
+1 & 4999716\\
+2 & 6001620\\
+3 & 6223467\\
+4 & 5824044\\
+5 & 6716263\\
+6 & 6256036\\
+7 & 6328449\\
+8 & 6073126\\
+9 & 5985870\\
+10 & 6067070\\
+\bottomrule
+\end{tabular}
+\end{center}
 \end{document}
