@@ -60,7 +60,7 @@ namespace KetoAnalyzer
                 chiSquared += Math.Pow(observedFrequency - expectedFrequency, 2) / expectedFrequency;
             }
 
-            double pValue = ChiSquared.CDF(79, chiSquared);
+            double pValue = 1 - ChiSquared.CDF(79, chiSquared);
 
             var latexBuilder = new StringBuilder();
 
